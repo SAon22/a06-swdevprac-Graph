@@ -51,6 +51,7 @@ export default function CardPanel() {
         />
 
         <div style={{width:"100%", marginTop:"20px"}}>
+        <div>Venue List with Ratings : {ratings.size}</div>
         {Array.from(ratings.entries()).map(([venue, rating]) => (<div key={venue} data-testid={venue}
         onClick={() => dispatch({type:"remove", venue:venue})} style={{cursor:"pointer"}}
         >{venue} Rating : {rating}</div>))}
