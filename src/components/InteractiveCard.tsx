@@ -5,7 +5,7 @@ export default function InteractiveCard({children, contentName}
     : {children:React.ReactNode, contentName:string}) {
 
     function onCardSelected() {
-        alert("You select " +  contentName);
+        //alert("You select " +  contentName);
     }
 
     function onCardMouseAction(event:React.SyntheticEvent) {
